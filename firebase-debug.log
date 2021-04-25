@@ -1,0 +1,42 @@
+[debug] [2021-04-25T20:59:31.925Z] ----------------------------------------------------------------------
+[debug] [2021-04-25T20:59:31.928Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-04-25T20:59:31.929Z] CLI Version:   9.10.0
+[debug] [2021-04-25T20:59:31.929Z] Platform:      darwin
+[debug] [2021-04-25T20:59:31.929Z] Node Version:  v14.16.0
+[debug] [2021-04-25T20:59:31.932Z] Time:          Mon Apr 26 2021 02:29:31 GMT+0530 (India Standard Time)
+[debug] [2021-04-25T20:59:31.932Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-25T20:59:31.948Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-25T20:59:31.948Z] > authorizing via signed-in user (sakshamaggarwal106@gmail.com)
+[debug] [2021-04-25T20:59:31.949Z] [iam] checking project messanger-clone-50fd0 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-04-25T20:59:31.951Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/messanger-clone-50fd0:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-04-25T20:59:33.560Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 25 Apr 2021 20:59:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1388","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-25T20:59:33.564Z] > refreshing access token with scopes: []
+[debug] [2021-04-25T20:59:33.565Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-25T20:59:33.794Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Sun, 25 Apr 2021 20:59:34 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-25T20:59:33.851Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/messanger-clone-50fd0 [none]
+[debug] [2021-04-25T20:59:34.401Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/messanger-clone-50fd0 200
+[debug] [2021-04-25T20:59:34.402Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/messanger-clone-50fd0 {"projectId":"messanger-clone-50fd0","projectNumber":"585182894032","displayName":"messanger-clone","name":"projects/messanger-clone-50fd0","resources":{"hostingSite":"messanger-clone-50fd0","storageBucket":"messanger-clone-50fd0.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'messanger-clone-50fd0'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-04-25T20:59:34.408Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-25T20:59:34.409Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-25T20:59:34.627Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 25 Apr 2021 20:59:35 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-25T20:59:34.679Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/messanger-clone-50fd0/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-04-25T20:59:36.614Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 25 Apr 2021 20:59:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[messanger-clone-50fd0]: beginning deploy... 
+[info] i  hosting[messanger-clone-50fd0]: found 1 files in y 
+[debug] [2021-04-25T20:59:36.629Z] > refreshing access token with scopes: []
+[debug] [2021-04-25T20:59:36.630Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-25T20:59:36.632Z] [hosting] hash cache [eQ] stored for 1 files
+[debug] [2021-04-25T20:59:36.633Z] [hosting][hash queue][FINAL] {"max":1,"min":1,"avg":1,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":6}
+[debug] [2021-04-25T20:59:36.853Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sun, 25 Apr 2021 20:59:37 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-25T20:59:36.909Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/messanger-clone-50fd0/versions/46a086ed6ec4da2d:populateFiles [none]
+[debug] [2021-04-25T20:59:36.909Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/messanger-clone-50fd0/versions/46a086ed6ec4da2d:populateFiles {"files":{"/index.html":"663c94c0d2f3ee8bfb2a786d37f406d176d16cf6bfaf9210aa8a73ae0289cde9"}}

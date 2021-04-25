@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+.appForm {
+  display: flex;
+  flex-direction: row !important;
+  padding: 20px;
+  position: fixed;
+  bottom: 20px;
+  border-radius: 10px;
+  z-index: 1;
+  background-color: rgb(205, 205, 205);
+  width: 93%;
+  justify-content: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  padding: 2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  width: 200px;
+  height: 150px;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.inputForm {
+  flex-direction: row !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MuiInputLabel-formControl {
+  top: -15px !important;
 }
